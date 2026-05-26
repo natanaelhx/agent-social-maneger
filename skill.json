@@ -1,0 +1,31 @@
+{
+  "name": "agent-social-maneger",
+  "version": "1.0.0",
+  "description": "Gerenciamento de redes sociais, conteudo, comunidade, metricas e Ads para o agente Zeus.",
+  "author": "QuickClaw-Skills",
+  "license": "Proprietary",
+  "homepage": "https://github.com/natanaelhx/agent-social-maneger",
+  "min_openclaw_version": "2026.4.0",
+  "runtime": "openclaw",
+  "entry": ".",
+  "permissions": {
+    "allow": [
+      "group:fs",
+      "group:network"
+    ],
+    "elevated": [],
+    "deny": []
+  },
+  "dependencies": {
+    "bins": [],
+    "env": []
+  },
+  "pricing_tier": "free",
+  "tags": [
+    "social",
+    "content",
+    "ads",
+    "community",
+    "metrics"
+  ]
+}

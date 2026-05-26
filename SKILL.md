@@ -1,6 +1,6 @@
 ---
 name: agent-social-maneger
-description: "Gerenciamento autonomo e assistido de redes sociais, conteudo, comunidade, direct messages, metricas e midia paga para o agente Zeus. Use quando o usuario pedir para conectar Instagram, TikTok, YouTube, Facebook, LinkedIn, X/Twitter, Threads ou outras redes; criar posts, reels, shorts, carrosseis, roteiros, thumbnails ou imagens; responder comentarios e DMs; analisar metricas; planejar, subir, pausar, otimizar ou relatar campanhas de Meta Ads, Google Ads, YouTube Ads ou TikTok Ads."
+description: "Gerenciamento autonomo e assistido de redes sociais, conteudo, comunidade, direct messages, metricas e midia paga para o agente Zeus. Use para conectar Instagram, TikTok, YouTube, Facebook, LinkedIn, X/Twitter, Threads; criar posts, reels, shorts, carrosseis, roteiros, thumbnails; responder comentarios e DMs; analisar metricas; planejar, subir ou otimizar Ads. Keywords: social media, content, community, ads, metrics."
 ---
 
 # Agent Social Maneger
@@ -19,18 +19,25 @@ Comece em **Modo Assistido** salvo configuracao explicita em contrario.
 
 Nao trate "permissao uma vez" como permissao ilimitada. Converta a permissao em um manifesto de limites e respeite-o em todas as acoes.
 
+## Ambiente QuickClaw
+
+- Leia credenciais somente do ambiente, conector autorizado ou Chaves e Segredos do dashboard. Nunca dependa de segredo salvo no git.
+- Quando configurar conta, token, webhook ou Ads pela primeira vez, pergunte uma coisa por vez e use emoji em cada pergunta.
+- Se uma API externa exigir chave, oriente o cadastro no dashboard em Chaves e Segredos e peca reset do runtime antes de tentar novamente.
+- Se a acao puder gastar dinheiro, enviar DM, publicar ao vivo ou alterar configuracao da conta, peca aprovacao explicita quando o manifesto nao autorizar.
+
 ## Roteamento De Referencias
 
 Leia somente o arquivo necessario para a tarefa:
 
-- Rodar o wizard completo de conexao, permissao, teste e ativacao: `references/connection-wizard.md`.
-- Escolher formas simples de autenticacao antes de implementar OAuth completo: `references/simple-auth.md`.
-- Conectar contas, validar tokens, mapear APIs ou webhooks: `references/integrations.md`.
-- Criar posts, carrosseis, scripts, imagens, thumbnails, calendarios ou publicacoes: `references/content-production.md`.
-- Responder comentarios, moderar comunidade ou operar directs: `references/community-management.md`.
-- Criar, subir, pausar, escalar ou otimizar Ads: `references/ads-management.md`.
-- Analisar metricas, criar dashboards ou relatorios: `references/metrics-reporting.md`.
-- Definir autonomia, aprovacoes, logs, privacidade e limites: `references/autonomy-safety.md`.
+- Rodar o wizard completo de conexao, permissao, teste e ativacao: `resources/connection-wizard.md`.
+- Escolher formas simples de autenticacao antes de implementar OAuth completo: `resources/simple-auth.md`.
+- Conectar contas, validar tokens, mapear APIs ou webhooks: `resources/integrations.md`.
+- Criar posts, carrosseis, scripts, imagens, thumbnails, calendarios ou publicacoes: `resources/content-production.md`.
+- Responder comentarios, moderar comunidade ou operar directs: `resources/community-management.md`.
+- Criar, subir, pausar, escalar ou otimizar Ads: `resources/ads-management.md`.
+- Analisar metricas, criar dashboards ou relatorios: `resources/metrics-reporting.md`.
+- Definir autonomia, aprovacoes, logs, privacidade e limites: `resources/autonomy-safety.md`.
 
 ## Preflight Obrigatorio
 
@@ -119,6 +126,14 @@ Para rotinas recorrentes, siga este ciclo:
 7. Revisar campanhas de Ads ativas.
 8. Pausar, ajustar ou escalar campanhas dentro dos limites.
 9. Registrar acoes e gerar relatorio.
+
+## Exemplos De Uso
+
+**Usuario:** "Zeus, cria um calendario de posts para o Instagram da semana."
+**Agente:** Carregue `resources/content-production.md`, confirme marca e limites se faltarem, entregue calendario em modo rascunho.
+
+**Usuario:** "Conecta minha conta do TikTok e deixa pronto para publicar."
+**Agente:** Carregue `resources/connection-wizard.md`, faca uma pergunta por vez com emoji, valide credenciais no ambiente e opere em modo assistido ate a permissao estar clara.
 
 ## Saida Padrao
 
